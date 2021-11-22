@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body class="ctn">
+    <nav class="navbar">
+        <div class="navbar__container">
+          <img class="head_logo"src="asset/logo.png">
+          <a href="#home" id="navbar__logo">G&E</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="welcome.html" class="navbar__links" id="home-page">Home Page</a>
+            </li>
+            <li class="navbar__item">
+              <a href="welcome.html#about" class="navbar__links" id="about-page">About Me</a>
+            </li>
+            <li class="navbar__item">
+              <a href="welcome.html#services" class="navbar__links" id="services-page"
+                >List Game</a>
+            </li>
+            <li class="navbar__item">
+              <a href="http://localhost:3000/index.html" class="navbar__links" id="about-page">Chat Live</a>
+            </li>
+            <li class="navbar__item">
+              <a href="music.html" class="navbar__links" id="about-page">Music</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="welcome.html" class="buttonss" id="signup" onclick="logout()">Back</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <button onclick="window.location.href='flappybird.html'"id="replay">
+        <i class="fas fa-play"></i>
+        RESTART
+      </button>
+    <canvas id="gamezone" width="900" height="500"></canvas>
+    <p id="score">SCORE: 0</p>
+</body>
+<script src="flappybird.js"></script>
+<link rel="stylesheet" href="css/flap.css"></link>
+<link rel="stylesheet" href="css/navbar.css"></link>
+</html>

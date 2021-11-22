@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #6e7888;
+}
+body {
+  background: #000000; 
+  background: -webkit-linear-gradient(to right, #131313, #131313);  
+  background: linear-gradient(to right, #131313, #434343); 
+  justify-content: center;
+  align-items: center;
+  color: #6e7888;
+}
+canvas {
+  background-color: #181825;
+  position: relative;
+  left : 360px;
+  top : 170px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-casual-btn{
+    position: relative;
+    left: 350px;
+    bottom: 290px;
+    font-size: 10px;
+    padding: 10px 20px;
+    background: #6e7888;
+    border: none;
+    color: #222738;
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }#play-casual-btn:hover {
+    background: #a6aab5;
+    background: #4cffd7;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  #play-casual-btn svg {
+    margin-right: 8px;
+  }
+  #replay {
+    position: relative;
+    left: 300px;
+    bottom: 90px;
+    font-size: 10px;
+    padding: 10px 20px;
+    background: #6e7888;
+    border: none;
+    color: #222738;
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  #replay:hover {
+    background: #a6aab5;
+    background: #4cffd7;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  #replay svg {
+    margin-right: 8px;
+  }
+  #score{
+    position: fixed;
+    left: 315px;
+    bottom: 340px;
+  }
+.ctn{
+    height: 97%;
+    
+}
+.buttonss{
+  position: relative;
+  left:14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #40E0D0; 
+  background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  
+  background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); 
+}

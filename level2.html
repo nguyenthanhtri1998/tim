@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man</title>
+  </head>
+  <body class="ctn">
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img class="head_logo"src="asset/logo.png">
+        <a href="#home" id="navbar__logo">G&E</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="welcome.html" class="navbar__links" id="home-page">Home Page</a>
+          </li>
+          <li class="navbar__item">
+            <a href="welcome.html#about" class="navbar__links" id="about-page">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="welcome.html#services" class="navbar__links" id="services-page"
+              >List Game</a>
+          </li>
+          <li class="navbar__item">
+            <a href="http://localhost:3000/index.html" class="navbar__links" id="about-page">Chat Live</a>
+          </li>
+          <li class="navbar__item">
+            <a href="music.html" class="navbar__links" id="about-page">Music</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="welcome.html" class="button" id="signup">Back</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <h1 class="pac">LV 2</h1>
+      <canvas id="gameCanvas"></canvas>
+     
+      <span class="nameCoder">GAME PACMAN by Nguyễn Thanh Trí</span> 
+    </div>
+    <button onclick="window.location.href='pacman.html'" type="button" class="btn2">Back to Level 1</button>
+  
+    
+    <link rel="stylesheet" href="css/pacman.css"></link>
+    <link rel="stylesheet" href="css/navbar.css"></link>
+    <script src="pacmanjs/Game2.js" type="module"></script>
+  </body>
+</html>
