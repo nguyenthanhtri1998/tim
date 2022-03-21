@@ -15,7 +15,6 @@ function createUserCollection(user){
    })
 }
 
-
 async function getuserInfo(userID){
     if(userID){
       const userInfoSnap = await  firebase.firestore()
@@ -39,8 +38,6 @@ async function getuserInfo(userID){
 
 
 }
-
-
 
 async function getuserInfoRealtime(userID){
     if(userID){
