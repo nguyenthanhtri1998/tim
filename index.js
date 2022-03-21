@@ -39,7 +39,7 @@ const highlightMenu = () => {
     guideMenu.classList.add('highlight');
     return;
   }
-
+ 
   if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
@@ -141,15 +141,16 @@ function showSlides(n) {
 var slideIndex = 0;
 showSlides();
 
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 2500); 
-// }
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 6000); 
+}
+
 
