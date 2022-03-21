@@ -1,0 +1,178 @@
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #DDDDDD;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: black;
+}
+
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 580px;
+    position: relative;
+    left:15px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.pre-scrollable{max-height:3400px;overflow-y:scroll}
+.container{
+    position: relative;
+    right: 30px;
+    width: 100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+   
+}
+    
+.input-group{position:relative;display:table;border-collapse:separate}
+.input-group.col{float:none;padding-right:0;padding-left:0}
+.input-group .form-control{
+    width:100%;
+    margin-bottom:0;
+    height:30px;
+    position: relative;
+    left: 15px;
+}
+#btn-chat{
+    position: relative;
+    left: 15px;
+    height: 36px;
+    width: 160px;
+}
+.img-circle{
+    position: relative;
+    top:3px;
+    border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+}
+p{
+    font-size: 28px;
+}
+.right {
+    background-color:#f1eff1
+}
+.trash{
+    width: 17px;
+}
+.restore{
+    width: 17px;
+}
+.input-group-lg>.input-group-addon,
+textarea.input-group-lg>.input-group-btn>
+.btn{height:auto}
+.input-group-sm>.form-control,.input-group-sm>
+.input-group-addon,.input-group-sm>.input-group-btn>
+.btn{
+    height:30px;
+    padding:5px 10px;
+    font-size:12px;
+    line-height:1.5;
+    border-radius:3px
+}
+select.input-group-sm>.form-control,select.input-group-sm>.input-group-addon,select.input-group-sm>.input-group-btn>
+.btn
+{
+    height:30px;
+    line-height:30px
+}
+textarea.input-group-sm>.form-control,
+textarea.input-group-sm>.input-group-addon,
+textarea.input-group-sm>.input-group-btn>
+.btn
+{
+    height:auto
+}
+.input-group-addon,.input-group-btn,.input-group 
+.form-control
+{
+    display:table-cell
+}
+.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child),.input-group .form-control:not(:first-child):not(:last-child)
+{
+    border-radius:0
+}
+.input-group-addon,.input-group-btn
+{
+    width:1%;
+    white-space:nowrap;
+    vertical-align:middle
+}
+
+.clearfix:before,.clearfix:after
+{
+    display:table;content:" "
+}
+.clearfix:after
+{
+    clear:both
+}
+.pull-right{
+    float:right!important;
+}
+.pull-left
+{
+    float:left!important
+}
+.hide
+{
+    display:none!important
+}
+
+.img-circle{
+    width: 70px;
+    height:70px;
+    
+}
+#upd{
+    font-size: 100%;
+}
