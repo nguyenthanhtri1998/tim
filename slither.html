@@ -1,64 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/navbar.css"></link>
-  
-    <script src="lib/phaser.min.js"></script>
-    <script src="slitherjs/game.js"></script>
-    <script src="slitherjs/snake.js"></script>
-    <script src="slitherjs/playerSnake.js"></script>
-    <script src="slitherjs/botSnake.js"></script>
-    <script src="slitherjs/eye.js"></script>
-    <script src="slitherjs/eyePair.js"></script>
-    <script src="slitherjs/shadow.js"></script>
-    <script src="slitherjs/food.js"></script>
-    <script src="slitherjs/util.js"></script>
-</head>
-<body >
-    
-    <nav class="navbar">
-        <div class="navbar__container">
-          <img class="head_logo"src="asset/logo.png">
-          <a href="#home" id="navbar__logo">G&E</a>
-          <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span> <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-          <ul class="navbar__menu">
-            <li class="navbar__item">
-              <a href="welcome.html" class="navbar__links" id="home-page">Home Page</a>
-            </li>
-            <li class="navbar__item">
-              <a href="welcome.html#about" class="navbar__links" id="about-page">About Me</a>
-            </li>
-            <li class="navbar__item">
-              <a href="welcome.html#services" class="navbar__links" id="services-page"
-                >List Game</a>
-            </li>
-            <li class="navbar__item">
-              <a href="music.html" class="navbar__links" id="about-page">Music</a>
-            </li>
-            <li class="navbar__btn">
-            <a href="welcome.html" class="buttonss" id="signup" onclick="logout()">Back</a>
-          </li>
-          </ul>
-        </div>
-      </nav>
-    <script>
-    (function() {
-        var game = new Phaser.Game(800, 500, Phaser.AUTO, null);
 
-        game.state.add('Game', Game);
-        game.state.start('Game');
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css">
+  </link>
+  <link rel="stylesheet" href="css/slither2.css">
+</link>
+  <script src="lib/phaser.min.js"></script>
+  <script src="slitherjs/game.js"></script>
+  <script src="slitherjs/snake.js"></script>
+  <script src="slitherjs/playerSnake.js"></script>
+  <script src="slitherjs/botSnake.js"></script>
+  <script src="slitherjs/eye.js"></script>
+  <script src="slitherjs/eyePair.js"></script>
+  <script src="slitherjs/shadow.js"></script>
+  <script src="slitherjs/food.js"></script>
+  <script src="slitherjs/util.js"></script>
+</head>
+
+<body>
+<!-- Navbar Section -->
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="#home" id="navbar__logo">G&E</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span> <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html#home" class="navbar__links" id="home-page">Home Page</a>
+      </li>
+      <li class="navbar__item">
+        <a href="index.html#about" class="navbar__links" id="about-page">About Me</a>
+      </li>
+      <li class="navbar__item">
+        <a href="index.html#services" class="navbar__links" id="services-page">List Game</a>
+      </li>
+      <li class="navbar__item">
+        <a href="index.html#guide" class="navbar__links" id="guide-page">Game Guide</a>
+      </li>
+      <li class="navbar__item">
+        <a href="chatroom.html" class="navbar__links" id="about-page">Chat Live</a>
+      </li>
+      <li class="navbar__item">
+        <a href="videocall.html" class="navbar__links" id="about-page">Video Call</a>
+      </li>
+      <li class="navbar__item">
+        <a href="music.html" class="navbar__links" id="about-page">GE Music</a>
+      </li>
+      <li class="navbar__btn">
+      <div class="dropdown">
+        <button class="nut_dropdown"> <a style="text-decoration: none"  id="user" class="message">Hi, <email-id>
+        </Email-id></a></button>
+        <div class="noidung_dropdown">
+          <a href="profile.html" class="cc" >Profile</a>
+          <a href="admin.html" class="cc2" id="adminpage" style="display: none">Admin page</a>
+          <a href="" class="cc" id="signup" onclick="logout()">Logout</a>
+        </div>
+      </div>
+    </li>
+    </ul>
+  </div>
+</nav>
+  <script>
+    (function () {
+      var game = new Phaser.Game(800, 500, Phaser.AUTO, null);
+
+      game.state.add('Game', Game);
+      game.state.start('Game');
     })();
-    </script>
-    
-    <form action="slither.html">
-        <input id="replay" type="submit" value="RESTART" />
-    </form>
-    <span class="nameCoder">GAME SLITHER by Nguyễn Thanh Trí</span> 
+  </script>
+
+  <button id="replay" onclick="window.location.href='slither.html'" >RESTART</button>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="firebase.js"></script>
+  <script src='index.js'></script>
   
-    <link rel="stylesheet" href="css/slither2.css"></link>
+  <script src='welcome.js'></script>
+
 </body>
+
 </html>
