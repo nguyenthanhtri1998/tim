@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Entertainment Website</title>
@@ -13,18 +15,18 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+
 </head>
 
 <body>
+
   <!--========== SCROLL TOP ==========-->
   <a href="#" class="scrolltop" id="scroll-top">
     <i class="iconify" data-icon="bx:bx-chevron-up"></i>
   </a>
-
   <!-- Navbar Section -->
   <nav class="navbar">
     <div class="navbar__container">
-      <img class="head_logo" src="asset/logo.png">
       <a href="#home" id="navbar__logo">G&E</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> <span class="bar"></span>
@@ -44,10 +46,31 @@
           <a href="#guide" class="navbar__links" id="guide-page">Game Guide</a>
         </li>
         <li class="navbar__item">
-          <a href="#sign-up" class="navbar__links" id="about-page">Music</a>
+          <a href="chatroom.html" class="navbar__links" id="about-page">Chat live</a>
         </li>
-        <li class="navbar__btn">
+        <li class="navbar__item">
+          <a href="videocall.html" class="navbar__links" id="about-page">Video Call</a>
+        </li>
+        <li class="navbar__item">
+          <a href="music.html" class="navbar__links" id="about-page">GE Music</a>
+        </li>
+        
+        <li class="navbar__btn" id="regis">
           <a href="#sign-up" class="button" id="signup">Register</a>
+        </li>
+        <li class="navbar__btn" id="testdrop" style="display:none">
+          <div class="dropdown">
+            <button class="nut_dropdown"> 
+              
+              <a style="text-decoration: none"  id="user" class="message">Hi, <email-id>
+            </Email-id></a>
+          </button>
+            <div class="noidung_dropdown" >
+              <a href="profile.html" class="cc" >Profile</a>
+              <a href="admin.html" class="cc2" id="adminpage" style="display: none">Admin page</a>
+              <a href="" class="cc" id="signup" onclick="logout()">Logout</a>
+            </div>
+          </div>
         </li>
         <button id="dark-mode-toggle" class="dark-mode-toggle">
           <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
@@ -59,7 +82,6 @@
       </ul>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <div class="hero" id="home">
     <div class="hero__container">
@@ -81,7 +103,6 @@
         <h2>I'm a student at Da Nang University of Technology (Bach Khoa)</h2>
         <p>Faculty of Information Technology</p>
         <button id="phone" class="main__btn" onclick="myFunction()">Call Number</button>
-        <!-- <button class="main__btn"><a href="#">Schedule Call</a></button> -->
       </div>
     </div>
   </div>
@@ -93,32 +114,26 @@
       <div class="services__card">
         <h2 class="fb1">HUNTING SNAKE</h2>
         <img src="asset/s.gif">
-        <div class="services__btn"><button onclick="window.location.href='#sign-up'">Click here to play</button></div>
+        <div class="services__btn"><button onclick="window.location.href='huntingsnake.html'">Click here to play</button></div>
       </div>
-
-      <!-- <div class="services__card">
-          <h2>HIT BOX</h2>
-          <img class="fb"src="asset/hitbox.png">
-          <div class="services__btn"><button onclick="window.location.href='hitbox.html'" >Click here to play</button></div>
-        </div> -->
       <div class="services__card">
         <h2 class="fb1">SLITHER AI BOT</h2>
         <img class="fb" src="asset/sli.png">
-        <div class="services__btn"><button onclick="window.location.href='#sign-up'">Click here to play</button></div>
+        <div class="services__btn"><button onclick="window.location.href='slither.html'">Click here to play</button></div>
       </div>
       <div class="services__card">
         <h2 class="fb1">FLYING CHICKEN</h2>
         <img class="fb" src="asset/flap.png">
-        <div class="services__btn"><button onclick="window.location.href='#sign-up'">Click here to play</button></div>
+
+        <div class="services__btn"><button onclick="window.location.href='flappybird.html'">Click here to play</button></div>
       </div>
       <div class="services__card">
         <h2 class="fb3">PACMAN</h2>
         <img src="asset/cat10.gif">
-        <div class="services__btn"><button class="pacman" onclick="window.location.href='#sign-up'">Click here to
+        <div class="services__btn"><button class="pacman" onclick="window.location.href='pacman.html'">Click here to
             play</button></div>
       </div>
     </div>
-    
     <!-- guide games-->
     <div class="guide" id="guide">
       <h1>Gameplay guide</h1>
@@ -131,13 +146,11 @@
           <div class="text">Use the left and right up and down arrows on the keyboard to control. Eat the bright spots
             on the screen to increase the score.</div>
         </div>
-
         <div class="mySlides fade">
           <img class="im" src="asset/slitherai.png" style="width:100%">
           <div class="text">Use your computer mouse to navigate the snake moves to eat points on the screen to increase
             the size, avoid other snakes if you don't want to lose</div>
         </div>
-
         <div class="mySlides fade">
           <img class="im" src="asset/cguide.png" style="width:100%">
           <div class="text">Use any key on your keyboard to control your chicken. Be careful not to hit obstacles and
@@ -154,7 +167,6 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br>
-
       <!-- The dots/circles -->
       <div class="idot" style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -166,39 +178,76 @@
     <div class="main" id="sign-up">
       <div class="main__container">
         <div class="main__content">
-          <h1>Join My Website</h1>
-          <h2>Register or Login</h2>
-          <p>To use the website's functions</p>
+          <h1>Welcome to the page</h1>
+          <h2 id="th2">Register or Login</h2>
+          <h2 id="th" style="display: none">Thank you for join</h2>
+          <p id="ha" style="display: none">Have a good day!</p>
+          <p id="ha2">To use the website's functions</p>
         </div>
         <img class="nengif" src="asset/nengif.gif">
       </div>
-      <div class="card">
+      <div class="card" id="cardlg">
         <div class="card-header">
           <center>
-            <h3>Login My Website</h3>
+            <h3>Login Website</h3>
           </center>
         </div>
         <form onsubmit="login()" id="loginForm" class="card-body px-5 py-4">
           <center><small><span id="error" style="color: red"></span></small></center>
-          <center><label class="custom-field">
+          <center>
+            <label class="custom-field">
               <input id="email" type="text" class="input" required />
               <span class="placeholder">Email Id</span>
             </label><br />
             <label class="custom-field">
               <input id="password" type="password" class="input" required />
               <span class="placeholder">Password</span>
-            </label>
+             
+            </label><br />
           </center><br /><br />
-          <a style="text-decoration: none" class="forgotss" href="#" onclick="forgotPass()">Forgot Password</a>
-          <center><button type="submit" class="btns">Login</button>
-            <button onclick="signUp()" class="btnss">Register</button>
+          <a style="text-decoration: none" class="forgotss" onclick="forgotPass()">Forgot Password</a>
+          <center>
+            <button type="submit" class="btns" >Login</button>
+            <!-- <button onclick="signUp()" class="btnss">Register</button> -->
+            <button type="button" onclick="document.getElementById('id01').style.display='block'" class="btnss" >
+              Register
+            </button>
           </center>
         </form>
       </div>
     </div>
   </div>
   </div>
-
+  <!-- sign-up -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form id="loginForm2" class="modal-content" onsubmit="loginS()" >
+      <div class="container">
+        <h1>Register</h1>
+        <p>Fill in this form to create an account</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input  class="input" id="email2" type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <div class="ctns">
+        <input  class="input" id="password2" type="password" placeholder="Enter Password" name="psw" required>
+        <span class="show-btn"><i class="fas fa-eye"></i></span>
+        </div>
+        <label for="name"><b>Name</b></label>
+        <input  class="input" id="name" type="text" placeholder="Enter Name" name="name" required>
+     
+          <!-- <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" id="rememberMe"> Remember me
+        </label> -->
+        <p></p>
+      
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn" onclick="signUp()" >Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
   <!-- Footer Section -->
   <div class="footer__container">
     <div class="footer__links">
@@ -223,7 +272,7 @@
         </div>
         <div class="footer__link--items">
           <h2>Media</h2>
-          <a href="https://www.instagram.com/">Instagram</a> <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.instagram.com/ntt_coder/">Instagram</a> <a href="https://www.facebook.com/thanhtriit">Facebook</a>
           <a href="https://www.youtube.com/">Youtube</a>
         </div>
       </div>
@@ -233,7 +282,7 @@
         <div class="footer__logo">
           <a href="#home" id="footer__logo"><img class="footer" src="asset/logo.png">GE</a>
         </div>
-        
+        <p class="website__rights">© GRADUATION THESIS of Nguyễn Thanh Trí 16TCLC1</p>
       </div>
   </div>
   </section>
@@ -262,6 +311,7 @@
                 <input id="textInput" class="input-box" type="text" name="msg" placeholder="'Enter' to send a mes">
                 <p></p>
               </div>
+
               <div class="chat-bar-icons">
                 <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
                 <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
@@ -275,13 +325,14 @@
       </div>
     </div>
   </div>
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
   <script src="chatjs/responses.js"></script>
@@ -289,5 +340,7 @@
   <script src="index.js"></script>
   <script src="firebase.js"></script>
   <script src="login.js"></script>
+  
 </body>
+
 </html>
