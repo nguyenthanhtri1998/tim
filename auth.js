@@ -1,7 +1,5 @@
 const myModel = document.querySelectorAll('.modal')
 
-
-
 async function signup(e){
     e.preventDefault()
     const email  = document.querySelector('#signupEmail')
@@ -23,7 +21,6 @@ async function signup(e){
     email.value = ""
     password.value = ""
     M.Modal.getInstance(myModel[0]).close()
-    
 }
 async function login(e){
     e.preventDefault()
