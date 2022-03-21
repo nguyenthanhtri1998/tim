@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
-const PlAYER_STORAGE_KEY = "F8_PLAYER";
+const PlAYER_STORAGE_KEY = "GE_PLAYER";
 
 const player = $(".player");
 const cd = $(".cd");
@@ -27,54 +27,51 @@ const app = {
   songs: [
     {
       name: "Em hát ai nghe",
-      singer: "Orange",
+      singer: "Raftaar x Fortnite",
       path: "./asset/music/EmHatAiNghe.mp3",
       image: "./asset/EmHatAiNghe.jpg"
     },
     {
       name: "Sài gòn hôm nay mưa",
-      singer: "HOÀNG DUYÊN, JSOL",
+      singer: "Raftaar x Salim Merchant x Karma",
       path: "./asset/music/SaiGonHomNayMua.mp3",
       image:"./asset/SaiGonHomNayMua.jpg"
     },
     {
       name: "Sài gòn đau lòng quá",
-      singer: "HOÀNG DUYÊN, JSOL",
+      singer: "Raftaar x Brobha V",
       path:
         "./asset/music/SaiGonDauLongQua.mp3",
-        image:"./asset/SaiGon.jpg"
+      image: "https://github.com/nguyenthanhtri1998/games-and-entertainment-website/blob/main/asset/SaiGon.jpg?raw=true"
     },
     {
       name: "Gặp nhưng không ở lại",
-      singer: "Hiền Hồ",
+      singer: "Raftaar x Nawazuddin Siddiqui",
       path: "./asset/music/GapNhungKhongOLai.mp3",
-      image: "./asset/gap.jpg"
+      image:
+        "https://kenh14cdn.com/thumb_w/660/203336854389633024/2020/11/27/screen-shot-2020-11-27-at-91355-am-16064432536261628517091.png"
     },
     {
       name: "Không thể cùng nhau suốt kiếp",
-      singer: "Hòa Minzy, MR Siro",
+      singer: "Raftaar",
       path: "./asset/music/KhongTheCungNhauSuotKiep.mp3",
-      image:"./asset/khongthe.jpg"
+      image:
+        "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/1/7/8/6/17861cfa5213a52daec2c556101fb421.jpg"
     },
     {
       name: "Em bỏ thuốc chưa",
-      singer: "Bích Phương",
+      singer: "Raftaar x kr$na",
       path:
         "./asset/music/EmBoHutThuocChua.mp3",
-      image: "./asset/embothuocchua.jpg"
+      image:
+        "https://i.ytimg.com/vi/DYdMUzHwAMY/hqdefault.jpg"
     },
     {
       name: "Tình nhân ơi",
-      singer: "Binz",
+      singer: "Raftaar x Harjas",
       path: "./asset/music/TinhNhanOi.mp3",
-      image: "./asset/tinhnhanoi.jpg"
-    }
-    ,
-    {
-      name: "Bước Qua Nhau",
-      singer: "Vũ",
-      path: "./asset/music/BuocQuaNhau.mp3",
-      image: "./asset/bqn.jpg"
+      image:
+        "https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/oEWlj5gYKz/size_xxl_1586752323.webp"
     }
     
   ],
