@@ -1,87 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music player</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/music.css">  
-    <link rel="stylesheet" href="css/navbar.css">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/music.css">
+  <link rel="stylesheet" href="css/navbar.css">
+
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="navbar__container">
-      <img class="head_logo"src="asset/logo.png">
-      <a href="#home" id="navbar__logo">G&E MUSIC</a>
-      <div class="navbar__toggle" id="mobile-menu">
-        <span class="bar"></span> <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__item">
-          <a href="welcome.html" class="navbar__links" id="home-page">Home Page</a>
-        </li>
-        <li class="navbar__item">
-          <a href="welcome.html#about" class="navbar__links" id="about-page">About Me</a>
-        </li>
-        <li class="navbar__item">
-          <a href="welcome.html#services" class="navbar__links" id="services-page"
-            >List Game</a>
-        </li>
-          <li class="navbar__item">
-          <a href="welcome.html#guide" class="navbar__links" id="guide-page"
-            >Game Guide</a>
-        </li>
-        <li class="navbar__btn">
-        <a href="welcome.html" class="buttonss" id="signup" onclick="logout()">Back</a>
-      </li>
-      </ul>
+ <!-- Navbar Section -->
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="#home" id="navbar__logo">G&E</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span> <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-  </nav>
-    <div class="player">
-        
-        <!-- Dashboard -->
-        <div class="dashboard">
-          <!-- Header -->
-          <header>
-            <h4>Now playing :</h4>
-            <h2>String 2022</h2>
-          </header>    
-            
-          <!-- CD -->
-          <div class="cd">
-            <div class="cd-thumb">
-            </div>
-          </div> 
-            
-          <!-- Control -->
-          <div class="control">
-            <div class="btn btn-repeat">
-              <i class="fas fa-redo"></i>
-            </div>
-            <div class="btn btn-prev">
-              <i class="fas fa-step-backward"></i>
-            </div>
-            <div class="btn btn-toggle-play">
-              <i class="fas fa-pause icon-pause"></i>
-              <i class="fas fa-play icon-play"></i>
-            </div>
-            <div class="btn btn-next">
-              <i class="fas fa-step-forward"></i>
-            </div>
-            <div class="btn btn-random">
-              <i class="fas fa-random"></i>
-            </div>
-          </div>
-          <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
-          <audio id="audio" src=""></audio>
-        </div>
-        
-        <!-- Playlist -->
-        <div class="playlist">
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="index.html#home" class="navbar__links" id="home-page">Home Page</a>
+      </li>
+      <li class="navbar__item">
+        <a href="index.html#about" class="navbar__links" id="about-page">About Me</a>
+      </li>
+      <li class="navbar__item">
+        <a href="index.html#services" class="navbar__links" id="services-page">List Game</a>
+      </li>
+      <li class="navbar__item">
+        <a href="index.html#guide" class="navbar__links" id="guide-page">Game Guide</a>
+      </li>
+      <li class="navbar__item">
+        <a href="chatroom.html" class="navbar__links" id="about-page">Chat Live</a>
+      </li>
+      <li class="navbar__item">
+        <a href="videocall.html" class="navbar__links" id="about-page">Video Call</a>
+      </li>
+      <li class="navbar__btn">
+      <div class="dropdown">
+        <button class="nut_dropdown"> <a style="text-decoration: none"  id="user" class="message">Hi, <email-id>
+        </Email-id></a></button>
+        <div class="noidung_dropdown">
+          <a href="profile.html" class="cc" >Profile</a>
+          <a href="admin.html" class="cc2" id="adminpage" style="display: none">Admin page</a>
+          <a href="" class="cc" id="signup" onclick="logout()">Logout</a>
         </div>
       </div>
-      <script src="music.js"></script>
+    </li>
+    </ul>
+  </div>
+</nav>
+  <div class="player">
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Header -->
+      <header>
+        <h4>Now playing :</h4>
+        <h2>String 2021</h2>
+      </header>
+
+      <!-- CD -->
+      <div class="cd">
+        <div class="cd-thumb">
+        </div>
+      </div>
+
+      <!-- Control -->
+      <div class="control">
+        <div class="btn btn-repeat">
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="btn btn-prev">
+          <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="btn btn-toggle-play">
+          <i class="fas fa-pause icon-pause"></i>
+          <i class="fas fa-play icon-play"></i>
+        </div>
+        <div class="btn btn-next">
+          <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="btn btn-random">
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+      <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+      <audio id="audio" src=""></audio>
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist">
+    </div>
+  </div>
+  <script src="music.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+  <script src="firebase.js"></script>
+  <script src='index.js'></script>
+  <script src='welcome.js'></script>
 </body>
+
 </html>
