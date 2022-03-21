@@ -60,7 +60,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "I love Code!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -83,7 +83,7 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
+  
     // setTimeout(() => {
     //     getHardResponse(sampleText);
     // }, 1000)
