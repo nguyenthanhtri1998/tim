@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN PAGE</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <script src="iconify.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <!-- <img class="head_logo2"src="asset/logo.png"> -->
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">G&E</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span> <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Home Page</a>
+        </li>
+        <li class="navbar__item">
+          <a href="index.html#about" class="navbar__links" id="about-page">About Me</a>
+        </li>
+        <li class="navbar__item">
+          <a href="index.html#services" class="navbar__links" id="services-page"
+            >List Game</a>
+        </li>
+        <li class="navbar__item">
+          <a href="chatroom.html" class="navbar__links" id="about-page">Chat Live</a>
+        </li>
+        <li class="navbar__item">
+          <a href="videocall.html" class="navbar__links" id="about-page">Video Call</a>
+        </li>
+        <li class="navbar__item">
+          <a href="music.html" class="navbar__links" id="about-page">GE Music</a>
+        </li>
+        <li class="navbar__btn">
+        <div class="dropdown">
+          <button class="nut_dropdown"> <a style="text-decoration: none"  id="user" class="message">Hi, <email-id>
+          </Email-id></a></button>
+          <div class="noidung_dropdown">
+            <a href="profile.html" class="cc" >Profile</a>
+            <a href="" class="cc" id="signup" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="hd">
+      <h3>List Member Of Page</h3>
+    </header>
+    <div class="table-wrapper">
+      <table class="table-users">
+        <tr>
+          <th>Name</th>
+          <th>Specialty</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </table>
+      <button class="btn btn-add">Add User</button>
+    </div>
+    <!-- Add Modal -->
+    <div class="add-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Add New User</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="specialty" placeholder="Specialty">
+            <input type="number" name="phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Edit User</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="specialty" placeholder="Specialty">
+            <input type="number" name="phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+  
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDt6OVBwvPvAEAFpokPRXpfnA3zoYtI5hk",
+     authDomain: "do-an-6aec8.firebaseapp.com",
+     databaseURL: "https://do-an-6aec8-default-rtdb.asia-southeast1.firebasedatabase.app",
+     projectId: "do-an-6aec8",
+     storageBucket: "do-an-6aec8.appspot.com",
+     messagingSenderId: "331078682754",
+     appId: "1:331078682754:web:f5a532ba8d77a0fffe4c9b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="index.js"></script>
+  <script src="firebase.js"></script>
+  <script src="welcome.js"></script>
+  <script src="admin.js"></script>
+  <script src="admincrud.js"></script>
+  
+
+</body>
+
+</html>
