@@ -226,4 +226,3 @@ $('#btn-input').keyup(function(event) {
     }
     // console.log("Key pressed");
 })
-
