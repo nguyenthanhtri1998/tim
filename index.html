@@ -44,7 +44,10 @@ canvas {
  .h1{
   color:red;
  }
- .txtretroshadow {
+ .header-text {
+   position: absolute;
+            top: 20px; /* Căn chỉnh top theo nhu cầu */
+            left: 20px; /* Căn chỉnh left theo nhu cầu */
   text-align: center;
   font-size: 50px;
   color: #2c2c2c;
@@ -67,6 +70,7 @@ canvas {
 
 
  <BODY>
+      <div class="header-text">THIS HEART FOR MEIBEIU, 8/3 vui vẻ, iu iu</div>
   <canvas id="heart"></canvas>
 
     <script>
@@ -695,7 +699,7 @@ var ParticlePool = (function() {
 })(document.getElementById('pinkboard'));
 
   </script>
-<h1 class='txtretroshadow'>THIS HEART FOR MEIBEIU, 8/3 vui vẻ, iu iu</h1>
+
  </BODY>
 
 </HTML>
