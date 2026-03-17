@@ -65,6 +65,25 @@ canvas {
       height: 100%;
       background-color: rgba(0, 0, 0, .2);
   }
+ .header-text2 {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 50px;
+    white-space: nowrap;
+    animation: chaychu 10s linear infinite;
+}
+
+@keyframes chaychu {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}
 </style>
  </HEAD>
 
@@ -222,7 +241,7 @@ canvas {
         else document.addEventListener('DOMContentLoaded', init, false);
     </script>
  
-   <div class="header-text2" style="position: absolute; top: 40px; left: 20px; color: red; font-size: 50px;">From thanh trí, iu iu iu</div>
+   <div class="header-text2">From thanh trí, iu iu iu</div>
     <div class="heart">
         <div class="left"></div>
         <div class="right"></div>
